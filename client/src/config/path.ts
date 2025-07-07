@@ -1,14 +1,22 @@
 export const PATHS = {
     auth: {
-        signUp: {
-            path: "/auth/signup"
-        },
-        signIn: {
-            path: "/auth/signin"
+        path: "/auth",
+        childrens: {
+            signUp: {
+                path: "/signup"
+            },
+            signIn: {
+                path: "/signin"
+            }
         }
     },
     home: {
-        path: "/"
+        path: "/",
+        childrens: {
+            dashboard: {
+                path: "/dashboard"
+            }
+        }
     },
 } as const;
 
