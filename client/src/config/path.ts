@@ -10,4 +10,6 @@ export const PATHS = {
     home: {
         path: "/"
     },
-}
+} as const;
+
+export type PathType = typeof PATHS;
