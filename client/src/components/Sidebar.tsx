@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import BlockIcon from '@mui/icons-material/Block';
 import AlarmIcon from '@mui/icons-material/Alarm';
-import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import SettingsIcon from '@mui/icons-material/Settings';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -18,13 +17,7 @@ import InsightsIcon from '@mui/icons-material/Insights';
 import HistoryOutlinedIcon from '@mui/icons-material/HistoryOutlined';
 
 const Sidebar = () => {
-    const navigate = useNavigate();
-
     const [isSidebarExpanded, setIsSidebarExpanded] = useState(true);
-
-    const handleNavigation = () => {
-        navigate("/app/set-constraints");
-    };
 
     const handleSidebarToggle = () => {
         setIsSidebarExpanded((prev) => !prev);
