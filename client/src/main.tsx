@@ -2,10 +2,12 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import DefaultRoutes from './routes/DefaultRoutes.tsx';
+import AppRoutes from './routes/App.routes.tsx';
+import LandingRoutes from "./routes/Landing.routes.tsx";
 
 const router = createBrowserRouter([
-  DefaultRoutes
+  LandingRoutes,
+  AppRoutes,
 ])
 
 createRoot(document.getElementById('root')!).render(
