@@ -1,7 +1,7 @@
 const Dashboard = () => {
     return (
-        <div>
-            <h1> Dashboard </h1>
+        <div className="flex-grow h-full border-2 border-zinc-100 rounded-lg shadow bg-white">
+            Dashboard
         </div>
     );
 };
