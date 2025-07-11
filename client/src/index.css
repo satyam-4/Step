@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #e1161f
+  --color-primary: #e1161f;
+  --color-button-bg: #e1161f;
+  --color-button-bg-hover: #b31219;
+  --color-button-ghost-border: #e1161f;
+  --color-button-ghost-bg: transparent;
+  --color-button-ghost-bg-hover: #eaeaec;
 }
+
