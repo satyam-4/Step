@@ -3,21 +3,27 @@ export const PATHS = {
         path: "/auth",
         childrens: {
             signUp: {
-                path: "/signup"
+                path: "signup"
             },
             signIn: {
-                path: "/signin"
+                path: "signin"
             }
         }
     },
     home: {
-        path: "/",
+        path: "/"
+    },
+    app: {
+        path: "/app",
         childrens: {
             dashboard: {
-                path: "/dashboard"
+                path: "dashboard"
+            },
+            setConstraints: {
+                path: "set-constraints"
             }
         }
-    },
+    } 
 } as const;
 
 export type PathType = typeof PATHS;
